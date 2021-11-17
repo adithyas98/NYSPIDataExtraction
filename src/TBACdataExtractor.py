@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 import re
+from redcapAPI import RedCapAPI
 
 #Store the directory we want to run the script on
 def readData(filename):
@@ -71,19 +72,25 @@ if __name__ == "__main__":
     dataFields.append('tbac_auditory_g')#We just need to include this at the end
 
     ### FILL THIS OUT ###
-    directory = r"/Users/adish/Documents/NYPSI and NKI Research/TextFileDataExtractionProject"
-    ####################
-	#Iterate through each file and extract data from the file
-	for filename in os.listdir(directory):
-		if (filename.endswith(".txt")):
+    directory = r"Z:/DAFFY DUCK BACKUPS SEPT.30.2021/TBAC"
+
+    for filename in os.listdir(directory):
+        if (filename.endswith(".txt")):
+            data = readDATA(filename)
+
+            redcapAPI = RedCapAPI()
+            status = redcapAPI.sendtoRedCap(dataFields, data)
+            print(status)
+    #for filename in os.listdir(directory):
+		#if (filename.endswith(".txt")):
 			#we only want to index the text files
 			#call our readData subroutine on the file
-			data = readData(filename)
+			#data = readData(filename)
              
             #We want to create a RedcapAPI object to send out data
-            redcapAPI = RedCapAPI()
-            status = redcapAPI.sendtoRedCap(dataFields,data)
-			print(status)
+            #redcapAPI = RedCapAPI()
+            #status = redcapAPI.sendtoRedCap(dataFields,data)
+			#print(status)
 
 
 

@@ -46,9 +46,11 @@ class RedCapAPI:
                 - None
         '''
         #Convert the data to json first
-		to_import_json = json.dumps([data], separators=(',',':'))
-        #Add the data to the payload
+        to_import_json = json.dumps([data], separators=(',',':'))
         self.payload['data'] = to_import_json
+        #to_import_json = json.dumps([data], separators=(',',':'))
+        #Add the data to the payload
+        #self.payload['data'] = to_import_json
 
 
     def toDict(listA,listB):
@@ -57,7 +59,7 @@ class RedCapAPI:
         outDict = {}
         for i in range(0,len(listA)):
             outDict[listA[i]] = listB[i]	
-    return outDict 
+        return outDict 
     
     def sendtoRedCap(self,keys,values):
         '''
@@ -77,9 +79,10 @@ class RedCapAPI:
         #Add the dictionary to the payload dictionary
         self.addData(data) #Add our data to the payload
 		#now we can attempt to send it to RedCap
-		r = requests.post(APILink,data=self.payload)
+        r = requests.post(APILink, data = self.payload)
+		#r = requests.post(APILink,data=self.payload)
         #Now we can return the status code
-		return str(r.status_code)
+        return str(r.status_code)
 
         
 #TODO: Create a Unit test to test everything!!!
