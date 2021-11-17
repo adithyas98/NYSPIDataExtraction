@@ -5,7 +5,7 @@ import json
 
 
 class RedCapAPI:
-    def __init__(self,APILink = 'https://rc-1.nyspi.org/api/',TokenLoc = 'TODO: Fill this in'):
+    def __init__(self,APILink = 'https://rc-1.nyspi.org/api/',):
         #The payload to actually send to RedCap
         self.payload= {
             'token': '',
@@ -20,10 +20,8 @@ class RedCapAPI:
         }
         #Set the API link 
         self.APILink = APILink
-        self.TokenJSONLoc = TokenLoc  #Directory to where the tokens are held
 
 
-    #TODO: Create a function that can get the API token
     def getToken(self):
         '''
             This method will use the json file that holds the encrypted API 

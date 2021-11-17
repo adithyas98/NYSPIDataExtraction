@@ -3,7 +3,6 @@ import os
 import re
 
 #Store the directory we want to run the script on
-directory = r"/Users/adish/Documents/NYPSI and NKI Research/TextFileDataExtractionProject"
 def readData(filename):
 	#now we can read the file
 	#We want to create a list that we can store our data in and return in the end
@@ -47,43 +46,44 @@ def readData(filename):
 		output.append(re.findall(r'\d+.?\d*',line)[0]) 
 	#we want to return a list that can be processed in the other file
 	return output
-#Create the data labels that we an use
 
-#create the base
-base = 'tbac_'
-#List of the Columns
-cols = ['raw_percent','scaled_percent','threshold_value']
 
-#now create the rows
-#make sure that the _ are added at the end
-rows = ['freq_','intensity_','duration_','pulse_','embedded_','temporal_','syl_order_','syl_recon_']
 
-# the labels take the form base + row + col
-#we are going to iterate and create a pair for each of the 24 measurments that we take
-#create a list to hold all the values
-dataFields = ['tbac_ra','tbac_date','record_id']
-for r in rows:
-	for c in cols:
-		#we want to collect the data in this manner to stay consistent with how it is extracted
-		dataFields.append(base + r + c)#Make sure that this is in fact the correct form of the labels
-dataFields.append('tbac_auditory_g')#We just need to include this at the end
 
-def toDict(listA,listB):
-	#this function will take the elements in the lists and make them into key value pairs
-	#The input for this function must be Labels,Data
-	outDict = {}
-	for i in range(0,len(listA)):
-		outDict[listA[i]] = listB[i]	
-	return outDict 
+
+
+
 
 if __name__ == "__main__":
+    #Create the data labels that we an use
+    base = 'tbac_'
+    #List of the Columns
+    cols = ['raw_percent','scaled_percent','threshold_value']
+    #make sure that the _ are added at the end
+    rows = ['freq_','intensity_','duration_','pulse_','embedded_','temporal_','syl_order_','syl_recon_']
+    #we are going to iterate and create a pair for each of the 24 measurments that we take
+    #create a list to hold all the values
+    dataFields = ['tbac_ra','tbac_date','record_id']
+    for r in rows:
+        for c in cols:
+            #we want to collect the data in this manner to stay consistent with how it is extracted
+            dataFields.append(base + r + c)#Make sure that this is in fact the correct form of the labels
+    dataFields.append('tbac_auditory_g')#We just need to include this at the end
+
+    ### FILL THIS OUT ###
+    directory = r"/Users/adish/Documents/NYPSI and NKI Research/TextFileDataExtractionProject"
+    ####################
 	#Iterate through each file and extract data from the file
 	for filename in os.listdir(directory):
 		if (filename.endswith(".txt")):
 			#we only want to index the text files
 			#call our readData subroutine on the file
 			data = readData(filename)
-			print(data)
+             
+            #We want to create a RedcapAPI object to send out data
+            redcapAPI = RedCapAPI()
+            status = redcapAPI.sendtoRedCap(dataFields,data)
+			print(status)
 
 
 
