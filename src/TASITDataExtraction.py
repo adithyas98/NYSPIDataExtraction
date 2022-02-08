@@ -21,12 +21,12 @@ def extractTASITData(filename,debug=False):
     '''
     #Create the labels
     labels = ['record_id']
-    base = 'TasitA_'
+    base = 'tasita'
     for i in range(1,17):
-        labels.append("{}do_{}".format(base,i))
-        labels.append("{}say_{}".format(base,i))
-        labels.append("{}think_{}".format(base,i))
-        labels.append("{}feel_{}".format(base,i))
+        labels.append("{}_{}_do".format(base,i))
+        labels.append("{}_{}_say".format(base,i))
+        labels.append("{}_{}_think".format(base,i))
+        labels.append("{}_{}_feel".format(base,i))
     data = [] #create an array to store the data
     #first we want to open the tsv file
     with open(filename) as f:
@@ -45,7 +45,13 @@ def extractTASITData(filename,debug=False):
             if debug:
                 print("Extracting:{}".format(row[5:9]))
             for el in row[5:9]:
-                data.append(el)
+                if el.lower() == 'yes':
+                    data.append(2)
+                elif el.lower() == 'no':
+                    data.append(1)
+                else:
+                    #The answer is don't know
+                    data.append(0)
         if debug:
             print("Number of Data Points: {}".format(len(data)))
             print("Data:{}".format(data))
