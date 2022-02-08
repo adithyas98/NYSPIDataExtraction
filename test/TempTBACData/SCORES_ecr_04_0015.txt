@@ -1,0 +1,42 @@
+
+Test of Basic Auditory Capabilities, Mod 4 (TBAC-4)
+Subtest and Auditory Ability Scores
+
+                                                  Tests Administered by Yifan_G                 Date: 8/5/2021
+       
+Subject: ecr_04_0015      Sex:  Male       Age: 22
+Native language: NOT_ENTERED   Years of musical training: NOT_ENTERED
+Hearing Status: 
+COMMENT 1 - 
+COMMENT 2 - 
+COMMENT 3 - 
+Performance on TBAC Subtests
+
+Subtest 				Percent Correct		Percentile Rank		Threshold Value
+
+1. Frequency Discrimination             87.5			80			  5.8 Hz 
+--------------------------------------------------------------------------------------------------------
+2. Intensity Discrimination             91.7			64			  0.5 dB 
+--------------------------------------------------------------------------------------------------------
+3. Duration Discrimination              81.9			59			  22.7 ms 
+--------------------------------------------------------------------------------------------------------
+4. Pulse-train Discrimination           84.7			55			  8.6 ms 
+--------------------------------------------------------------------------------------------------------
+5. Embedded Tone Test                   83.3			60			  25.6 ms 
+--------------------------------------------------------------------------------------------------------
+6. Temporal Order Discrimination        79.2			58			  45.8 ms 
+--------------------------------------------------------------------------------------------------------
+7. Syllable Order Discrimination        54.2			5			  256.1 ms 
+--------------------------------------------------------------------------------------------------------
+8. Syllable Recognition                 56.5			25			  -6.6 dB 
+--------------------------------------------------------------------------------------------------------
+
+The Subject ID and the demographic information above were entered on the date testing was begun 
+at the TBAC-4 "User Information Panel".
+Percentile ranks and threshold values are based on distributions of performance on the  
+TBAC subtests by 338 young adults with normal hearing.  Methods of obtaining these 
+statistics are described in Kidd, et al. (2007)
+
+****************
+
+Auditory "G" (General auditory ability) - 21
