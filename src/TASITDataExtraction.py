@@ -46,12 +46,12 @@ def extractTASITData(filename,debug=False):
                 print("Extracting:{}".format(row[5:9]))
             for el in row[5:9]:
                 if el.lower() == 'yes':
-                    data.append(2)
-                elif el.lower() == 'no':
                     data.append(1)
+                elif el.lower() == 'no':
+                    data.append(0)
                 else:
                     #The answer is don't know
-                    data.append(0)
+                    data.append(6)
         if debug:
             print("Number of Data Points: {}".format(len(data)))
             print("Data:{}".format(data))
