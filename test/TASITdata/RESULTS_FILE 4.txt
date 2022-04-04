@@ -1,0 +1,17 @@
+Session_Name_	Trial_Index_	Trial_Recycled_	video	audio	Q1_RESP	Q2_RESP	Q3_RESP	Q4_RESP	start_ttl	end_ttl	video_timer
+804tasa	1	False	TASIT_A1X.xvd	TASIT_A1X.wav	yes	yes	idk	yes	1	17	57000
+804tasa	1	False	TASIT_A2X.xvd	TASIT_A2X.wav	yes	yes	yes	yes	2	27	19000
+804tasa	1	False	TASIT_A3X.xvd	TASIT_A3X.wav	yes	yes	no	idk	3	37	27000
+804tasa	1	False	TASIT_A4X.xvd	TASIT_A4X.wav	no	yes	no	no	4	47	53000
+804tasa	1	False	TASIT_A5X.xvd	TASIT_A5X.wav	yes	yes	no	yes	5	57	47000
+804tasa	1	False	TASIT_A6X.xvd	TASIT_A6X.wav	yes	yes	no	yes	6	67	27000
+804tasa	1	False	TASIT_A7X.xvd	TASIT_A7X.wav	yes	no	yes	yes	7	77	15000
+804tasa	1	False	TASIT_A8X.xvd	TASIT_A8X.wav	no	yes	no	yes	8	87	24000
+804tasa	1	False	TASIT_A9X.xvd	TASIT_A9X.wav	yes	no	yes	no	9	97	49000
+804tasa	1	False	TASIT_A10X.xvd	TASIT_A10X.wav	yes	yes	yes	yes	10	107	33000
+804tasa	1	False	TASIT_A11X.xvd	TASIT_A11X.wav	yes	yes	idk	yes	11	117	46000
+804tasa	1	False	TASIT_A12X.xvd	TASIT_A12X.wav	yes	yes	no	yes	12	127	25000
+804tasa	1	False	TASIT_A13X.xvd	TASIT_A13X.wav	yes	no	no	yes	13	137	34000
+804tasa	1	False	TASIT_A14X.xvd	TASIT_A14X.wav	yes	yes	yes	yes	14	147	25000
+804tasa	1	False	TASIT_A15X.xvd	TASIT_A15X.wav	yes	yes	yes	no	15	157	26000
+804tasa	1	False	TASIT_A16X.xvd	TASIT_A16X.wav	yes	no	no	yes	16	167	35000

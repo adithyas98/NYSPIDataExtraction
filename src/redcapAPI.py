@@ -115,7 +115,12 @@ class RedCapAPI:
             dictWrite = DictWriter(fileObject,fieldnames=headers)
             #write the header
             dictWrite.writeheader()
-
+    
+    def translateRecordID(self,recordID):
+        '''
+        This method will translate recordIDs to a number
+        '''
+        #TODO:Create this method and connect it to the TASIT and TBAC
         
 
         

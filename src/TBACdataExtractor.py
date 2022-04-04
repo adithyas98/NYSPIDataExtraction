@@ -25,6 +25,10 @@ def readData(filename):
 
         subjectID =line.split(" ")[1]#This will get the subject's ID number
         output.append(subjectID)#add the subject ID to the output list
+
+        #We need to reorder such that recordid is first
+        output[0],output[1],output[2] = output[2],output[0],output[1]
+
         #Now we want to be able to get the rest of the data points
         #We first need to skip over a certain number of columns
         for i in range(0,9):
@@ -32,8 +36,9 @@ def readData(filename):
         for x in range(0,8):
             line = f.readline()
             #now we want to extract the numbers from the data
-            dataEntries = re.findall(r'[><-]*[A-Za-z0-9]+\.?[A-Za-z0-9]*',line)
-            #dataEntries = re.findall(r'[><-]*\d+\.?\d*',line)
+            #dataEntries = re.findall(r'[><-]*[A-Za-z0-9]+\.?[A-Za-z0-9]*',line)
+            #dataEntries = re.findall(r'[><-]*]\d+\.?\d*',line)#only captures numbers
+            dataEntries = re.findall(r'[><-]*(\d+\.?\d*|X?)',line)#Captures numbers and the letter X
             # We want to add each individual data point in this array to the final output array
             for entry in dataEntries[1:None]:
                 output.append(entry)
@@ -64,7 +69,7 @@ if __name__ == "__main__":
     rows = ['freq_','intensity_','duration_','pulse_','embedded_','temporal_','syl_order_','syl_recon_']
     #we are going to iterate and create a pair for each of the 24 measurments that we take
     #create a list to hold all the values
-    dataFields = ['tbac_ra','tbac_date','record_id']
+    dataFields = ['record_id','tbac_ra','tbac_date']
     for r in rows:
         for c in cols:
             #we want to collect the data in this manner to stay consistent with how it is extracted

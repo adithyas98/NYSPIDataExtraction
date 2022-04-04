@@ -2,9 +2,9 @@
 Test of Basic Auditory Capabilities, Mod 4 (TBAC-4)
 Subtest and Auditory Ability Scores
 
-                                                  Tests Administered by Shayna_H                 Date: 2/16/2021
+                                                  Tests Administered by Yifan_G                 Date: 8/1/2021
        
-Subject: ecr_08_0003      Sex:  Female       Age: NOT_ENTERED
+Subject: ecr_00_0007      Sex:  Female       Age: 29
 Native language: NOT_ENTERED   Years of musical training: NOT_ENTERED
 Hearing Status: 
 COMMENT 1 - 
@@ -14,21 +14,21 @@ Performance on TBAC Subtests
 
 Subtest 				Percent Correct		Percentile Rank		Threshold Value
 
-1. Frequency Discrimination             70.8			9			  20.5 Hz 
+1. Frequency Discrimination             86.1			74			  7 Hz 
 --------------------------------------------------------------------------------------------------------
-2. Intensity Discrimination             77.8			14			  1.2 dB 
+2. Intensity Discrimination             88.9			46			  0.6 dB 
 --------------------------------------------------------------------------------------------------------
-3. Duration Discrimination              79.2			39			  27.3 ms 
+3. Duration Discrimination              70.8			13			  43.1 ms 
 --------------------------------------------------------------------------------------------------------
-4. Pulse-train Discrimination           75			18			  14.1 ms 
+4. Pulse-train Discrimination           77.8			22			  12.3 ms 
 --------------------------------------------------------------------------------------------------------
-5. Embedded Tone Test                   83.3			60			  25.6 ms 
+5. Embedded Tone Test                   70.8			11			  45.1 ms 
 --------------------------------------------------------------------------------------------------------
-6. Temporal Order Discrimination        70.8			28			  64.4 ms 
+6. Temporal Order Discrimination        66.7			16			  76.4 ms 
 --------------------------------------------------------------------------------------------------------
-7. Syllable Order Discrimination        64.6			17			  162.9 ms 
+7. Syllable Order Discrimination        68.8			26			  139.2 ms 
 --------------------------------------------------------------------------------------------------------
-8. Syllable Recognition                 46.5			1			  >-4.49 dB 
+8. Syllable Recognition                 52			9			  -5.2 dB 
 --------------------------------------------------------------------------------------------------------
 
 The Subject ID and the demographic information above were entered on the date testing was begun 
@@ -39,4 +39,4 @@ statistics are described in Kidd, et al. (2007)
 
 ****************
 
-Auditory "G" (General auditory ability) - 10
+Auditory "G" (General auditory ability) - 7
