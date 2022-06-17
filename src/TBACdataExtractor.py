@@ -38,7 +38,8 @@ def readData(filename):
             #now we want to extract the numbers from the data
             #dataEntries = re.findall(r'[><-]*[A-Za-z0-9]+\.?[A-Za-z0-9]*',line)
             #dataEntries = re.findall(r'[><-]*]\d+\.?\d*',line)#only captures numbers
-            dataEntries = re.findall(r'[><-]*(\d+\.?\d*|X?)',line)#Captures numbers and the letter X
+            dataEntries = re.findall(r'[><-]*(\d+\.?\d*|X+)',line)#Captures numbers and the letter X
+            print(dataEntries)
             # We want to add each individual data point in this array to the final output array
             for entry in dataEntries[1:None]:
                 output.append(entry)
