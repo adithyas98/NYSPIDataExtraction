@@ -79,7 +79,7 @@ if __name__ == "__main__":
 
     ### FILL THIS OUT ###
     directory = r"/Users/adish/Documents/NYPSI and NKI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/TempTBACData"
-
+    os.chdir(directory)
     allData = dict()
     debug = True
     problemFiles = []
