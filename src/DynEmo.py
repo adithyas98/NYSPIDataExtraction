@@ -4,6 +4,7 @@ import re
 from redcapAPI import RedCapAPI
 import csv
 debug = False #Set to false when not debugging
+folder = True #True when we have a folder file structure
 def readData(filename):
     #first we want to create a variable to hold the data
     data = []
@@ -70,22 +71,48 @@ def readData(filename):
 
 
 if __name__ == "__main__":
-    baseDir = "/Users/adish/Documents/NYPSI and NKI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/DynEmoData"
+    baseDir = "/Users/adish/Documents/NYPSI and NKI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/DynEmoData/DynEmo/"
     os.chdir(baseDir)#change the directory
     errorFiles = []
     rc = RedCapAPI()
     dataDicts = []
-    for f in os.listdir():
-        if f.endswith('.txt'):
-            print(f)
-            labels,data = readData(f)
-            if len(labels) != len(data):
-                #Then we want to append the error files to a list
-                errorFiles.append(f)
-            else:
-                #if there aren't any issues continue normally
-                #we want to make them into dictionaries
-                dataDicts.append(rc.toDict(labels,data))
+    baseDirFiles = os.listdir()#list of folders and files in baseDir
+    for f in baseDirFiles:
+        if folder:
+            #If we have a folder file structure, then we want to go into those
+            #   folders and extract the txt
+            if not os.path.isdir(os.path.join(baseDir,f)):
+                #This isn't a folder so we aren't interested
+                print(f)
+                continue#just want to continue to the next file/folder
+            os.chdir(os.path.join(baseDir,f))
+            print(os.getcwd())
+            for g in os.listdir():
+                if g.startswith('RESULTS') and g.endswith('.txt'):
+                    #We are looking for RESULTS to be at the begining of the 
+                    #   file name
+                    print(f)
+                    labels,data = readData(g)
+                    if len(labels) != len(data):
+                        #Then we want to append the error files to a list
+                        errorFiles.append(f)
+                    else:
+                        #if there aren't any issues continue normally
+                        #we want to make them into dictionaries
+                        dataDicts.append(rc.toDict(labels,data))
+        else:
+            #We want to run like normal
+            if f.endswith('.txt'):
+                print(f)
+                labels,data = readData(f)
+                if len(labels) != len(data):
+                    #Then we want to append the error files to a list
+                    errorFiles.append(f)
+                else:
+                    #if there aren't any issues continue normally
+                    #we want to make them into dictionaries
+                    dataDicts.append(rc.toDict(labels,data))
+    os.chdir(baseDir)
     header = dataDicts[0].keys()
     rc.addCSVHeader(header,"DynEmoCombinedData")
     for d in dataDicts:
