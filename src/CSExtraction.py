@@ -44,18 +44,36 @@ def readData(file):
             #append like normal
             dataLists[i] = dataFile[k]
     assert len(keys) == len(dataLists)#Just make sure we don't run into any issues
-    #Make sure we have the same amount of data
-    assert len(dataLists[0]) == len(dataLists[1]) and len(dataLists[1]) == len(dataLists[2])
+    
+    #We want to add empty values if we have different number of data points
+
+
+
     #calculate the averages
     averages = []
     for dataset in dataLists:
         averages.append(sum(dataset)/len(dataset))
 
+
+
+    #First find the length of list with the greatest length
+    maxLen = 0
+    for d in dataLists:
+        if len(d) > maxLen:
+            #Then replace the value
+            maxLen = len(d)
+
+    #Now with this maxlen value we can extend the shorter lists
+    for d in dataLists:
+        d.extend([' '] * (maxLen - len(d)))
+
+    assert len(dataLists[0]) == len(dataLists[1]) and len(dataLists[1]) == len(dataLists[2])
+
     #Make the labels
     
     labels = ['record_id']#init the labels list
     for k in keys:
-        for i in range(len(dataLists[0])):
+        for i in range(maxLen):
             labels.append("CS_{}_{}".format(k,i))
 
     #create keys for averages
@@ -73,7 +91,6 @@ def readData(file):
     for avg in averages:
         data.append(avg)
 
-    print(labels,data)
     return labels,data
 
 
