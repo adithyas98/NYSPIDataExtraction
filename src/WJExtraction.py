@@ -6,7 +6,7 @@ import csv
 from mat4py import loadmat
 import itertools
 import pypandoc
-debug = True #Set to false when not debugging
+debug = False #Set to false when not debugging
 
 
 
@@ -30,18 +30,48 @@ def readData(file):
             #We want to mark the position
             dataLine = i
     #Now we can start reading the data in from this point on
-    data = []
+    dataEntries = []
     for line in lines[dataLine+2:]:
         if 'Woodcock-Johnson IV Tests' in line:
             #We are done reading the data and we can stop
             break
         if len(line.strip()) != 0:
-            dataEntries = line.split()[1:]
+            dataEntries.append(line.split('\n'))
             #TODO: Need to find a way to only get number entries, maybe with regex and space characters, with split
             #The best way to do it would be to find the data points based on split and regex
-            print(dataEntries)
+            if debug:
+                print(dataEntries[0])
+    #Now we need to gather the clusters (The tests run) and the data points
+    clusters = []
+    print("Entering Loop")
+    print(len(dataEntries))
+    for d in dataEntries:
+        cluster = re.findall(r'[a-zA-Z]{2,}',d[0])
+        clusters.append('_'.join(cluster))
+
+    if debug:
+        print(clusters)
+
+    #Now we can try to extract the data points
+    data = [file]
+    for d in dataEntries:
+        extracts = re.findall("[><\-\(]?\d{1,}.{0,2}\d{1,}\)?",d[0])
+        # combine the last two elements
+        data.extend(extracts[0:-2])
+        data.append(''.join(extracts[-2:]))
+    if debug:
+        print(data)
+    
+    #Now create the labels
+    scoreNames = ['W','AE','RPI','SS_68%_Band']
+    labels = ['record_id']
+    for c in clusters:
+        for s in scoreNames:
+            labels.append("WJ_{}_{}".format(c,s))
             
-    return None,None
+    if debug:
+        print(labels)
+    return labels,data
 
 
 
@@ -69,7 +99,6 @@ if __name__ == "__main__":
            output = pypandoc.convert_file(f,'plain',outputfile='{}.txt'.format(f.split('.')[0]))
            assert output == ""
         if f.endswith('.txt'):
-            print(f)
             labels,data = readData(f)
             if len(labels) != len(data):
                 #Then we want to append the error files to a list
@@ -78,6 +107,7 @@ if __name__ == "__main__":
                 #if there aren't any issues continue normally
                 #we want to make them into dictionaries
                 dataDicts.append(rc.toDict(labels,data))
+    print(len(dataDicts))
     header = dataDicts[0].keys()
     rc.addCSVHeader(header,"CSCombinedData")
     for d in dataDicts:
