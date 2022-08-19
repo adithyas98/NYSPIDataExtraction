@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import os
 import re
 from redcapAPI import RedCapAPI
@@ -6,7 +6,7 @@ import csv
 from mat4py import loadmat
 import itertools
 import pypandoc
-debug = False #Set to false when not debugging
+debug = True #Set to false when not debugging
 
 
 
@@ -37,10 +37,10 @@ def readData(file):
             break
         if len(line.strip()) != 0:
             dataEntries.append(line.split('\n'))
-            #TODO: Need to find a way to only get number entries, maybe with regex and space characters, with split
             #The best way to do it would be to find the data points based on split and regex
             if debug:
                 print(dataEntries[0])
+    '''Outdated no need for clusters
     #Now we need to gather the clusters (The tests run) and the data points
     clusters = []
     print("Entering Loop")
@@ -51,6 +51,7 @@ def readData(file):
 
     if debug:
         print(clusters)
+    '''
 
     #Now we can try to extract the data points
     data = [file]
@@ -62,12 +63,21 @@ def readData(file):
     if debug:
         print(data)
     
+    '''Outdated, Need to use the wj_row<num>_col<num> format
     #Now create the labels
-    scoreNames = ['W','AE','RPI','SS_68%_Band']
+    scoreNames = ['W','AE','RPI','SS']
     labels = ['record_id']
     for c in clusters:
         for s in scoreNames:
             labels.append("WJ_{}_{}".format(c,s))
+    '''
+    #We need to create labels in the following format
+    #wj_row<num>_col<num>
+    #however, the number is messed up in redcap so we need to take that into account
+    
+    labels = ['record_id']
+    #we want to go ahead and extend the first row since it doesn't follow any pattern
+    #TODO: Hardcode the first row, then come up with a pattern for the second and following rows
             
     if debug:
         print(labels)
@@ -88,7 +98,7 @@ def readData(file):
 
 
 if __name__ == "__main__":
-    baseDir = "/Users/adish/Documents/NYPSI and NKI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/Woodcock Johnson"
+    baseDir = "/../test/Woodcock Johnson"
     os.chdir(baseDir)#change the directory
     errorFiles = []
     rc = RedCapAPI()
@@ -109,10 +119,10 @@ if __name__ == "__main__":
                 dataDicts.append(rc.toDict(labels,data))
     print(len(dataDicts))
     header = dataDicts[0].keys()
-    rc.addCSVHeader(header,"CSCombinedData")
+    rc.addCSVHeader(header,"WJCombinedData")
     for d in dataDicts:
         h = d.keys()
-        rc.toCSV(d,"CSCombinedData",h)
+        rc.toCSV(d,"WJCombinedData",h)
     print("Problem Files:\n")
     print(errorFiles)
  
