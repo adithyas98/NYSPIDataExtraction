@@ -24,15 +24,15 @@ def readData(file):
     lines = []
     with open(file,'r') as f:
         lines = f.readlines()
-    dataLine = 0#hold the position of where the data starts
+    dataLine = None#hold the position of where the data starts
     for i,line in enumerate(lines):
-        if 'CLUSTER/Test' in line:
+        if 'CLUSTER/TEST'.lower() in line.lower():
             #We want to mark the position
             dataLine = i
     #Now we can start reading the data in from this point on
     dataEntries = []
     for line in lines[dataLine+2:]:
-        if 'Woodcock-Johnson IV Tests' in line:
+        if 'Woodcock-Johnson IV Tests'.lower() in line.lower():
             #We are done reading the data and we can stop
             break
         if len(line.strip()) != 0:
@@ -40,18 +40,16 @@ def readData(file):
             #The best way to do it would be to find the data points based on split and regex
             if debug:
                 print(dataEntries[0])
-    '''Outdated no need for clusters
     #Now we need to gather the clusters (The tests run) and the data points
     clusters = []
-    print("Entering Loop")
-    print(len(dataEntries))
+    if debug:
+        print(len(dataEntries))
     for d in dataEntries:
         cluster = re.findall(r'[a-zA-Z]{2,}',d[0])
         clusters.append('_'.join(cluster))
 
     if debug:
         print(clusters)
-    '''
 
     #Now we can try to extract the data points
     data = [file]
@@ -61,6 +59,7 @@ def readData(file):
         data.extend(extracts[0:-2])
         data.append(''.join(extracts[-2:]))
     if debug:
+        print("Printing Data")
         print(data)
     
     '''Outdated, Need to use the wj_row<num>_col<num> format
@@ -73,11 +72,29 @@ def readData(file):
     '''
     #We need to create labels in the following format
     #wj_row<num>_col<num>
-    #however, the number is messed up in redcap so we need to take that into account
+    #however, the numbering is messed up in redcap so we need to take that into account
     
-    labels = ['record_id']
+    labels = ['record_id','wj_row1_colu0','wj_row1_colu1','wj_row1_colu2','wj_row1_colu3']
     #we want to go ahead and extend the first row since it doesn't follow any pattern
-    #TODO: Hardcode the first row, then come up with a pattern for the second and following rows
+    columns = ['4','1','2','3']
+    #Now we will use the cluseters/tests list to figure out what row we are on
+    for row in range(len(clusters[1:])):
+        for i,col in enumerate(columns):
+            #For the first column we want to keep the row index as is, for everything else add one
+            if i >= 0:
+                #we want to add one to the row index
+                r = row+1
+                c = col
+            else:
+                #This will already happen, but just to be more explicit
+                r = row
+                c = col
+            labels.append("wj_row{}_colu{}".format(r,c))
+                
+
+
+
+
             
     if debug:
         print(labels)
@@ -98,8 +115,10 @@ def readData(file):
 
 
 if __name__ == "__main__":
-    baseDir = "/../test/Woodcock Johnson"
+    ################################CHANGE THIS FILE PATH##########################
+    baseDir = "/mnt/h/RedCapDataExtractionScripts/NYSPIDataExtraction/test/Woodcock Johnson"
     os.chdir(baseDir)#change the directory
+    print(baseDir)
     errorFiles = []
     rc = RedCapAPI()
     dataDicts = []

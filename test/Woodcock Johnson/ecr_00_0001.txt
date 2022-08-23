@@ -1,34 +1,35 @@
 +-------------------------+-------------------+
-| Name: ecr_00_0001       |   --------- --    |
-|                         |   School:         |
+| NAME: ecr_00_0001       |   --------- --    |
+|                         |   SCHOOL:         |
 |                         |   --------- --    |
+                                             
 +=========================+===================+
-| Date of Birth:          |   ---------- --   |
-|                         |   Teacher:        |
+| DATE OF BIRTH:          |   ---------- --   |
+|                         |   TEACHER:        |
 |                         |   ---------- --   |
 +-------------------------+-------------------+
 |   ------ ----------     |   -------- --     |
-|   Age:   28 years       |   Grade:          |
+|   AGE:   28 years       |   GRADE:          |
 |   ------ ----------     |   -------- --     |
 +-------------------------+-------------------+
-| Sex: Female             | ID: ecr_00_0001   |
+| SEX: Female             | ID: ecr_00_0001   |
 +-------------------------+-------------------+
 |   ------------------ -- |   ------------ -- |
-|   Date of Testing:      |   Examiners:      |
+|   DATE OF TESTING:      |   EXAMINERS:      |
 |   ------------------ -- |   ------------ -- |
 +-------------------------+-------------------+
 
 TESTS ADMINISTERED
 
-Woodcock-Johnson IV Tests of Achievement Form A and Extended (Norms
+_Woodcock-Johnson IV Tests of Achievement Form A and Extended_ (Norms
 based on age 28-7)
 
 TABLE OF SCORES
 
-Woodcock-Johnson IV Tests of Achievement Form A and Extended (Norms
+_Woodcock-Johnson IV Tests of Achievement Form A and Extended_ (Norms
 based on age 28-7)
 
-  CLUSTER/Test                 W     AE     RPI      SS (68% Band)
+  CLUSTER/TEST                 W     AE     RPI      SS (68% BAND)
   ---------------------------- ----- ------ -------- ---------------
   READING                      550   >30    98/90    112 (108-117)
   BROAD READING                559   >30    98/90    113 (110-116)
@@ -62,7 +63,7 @@ based on age 28-7)
   Spelling of Sounds           523   >22    97/90    115 (108-122)
   Reading Vocabulary           545   >30    99/90    122 (116-127)
 
-  Woodcock-Johnson IV Tests of Achievement Form A and Extended Test Session Observations   
+  WOODCOCK-JOHNSON IV TESTS OF ACHIEVEMENT FORM A AND EXTENDED TEST SESSION OBSERVATIONS   
   ---------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------
                                                                                            Level of conversational proficiency: Very Advanced
                                                                                            Level of cooperation: Exceptionally cooperative throughout the examination
@@ -72,7 +73,7 @@ based on age 28-7)
                                                                                            Care in responding: Prompt but careful in responding (typical for age/grade)
                                                                                            Response to difficult tasks: Generally persisted with difficult tasks (typical for age/grade)
 
-  Woodcock-Johnson IV Tests of Achievement Form A and Extended Qualitative Observations   
+  WOODCOCK-JOHNSON IV TESTS OF ACHIEVEMENT FORM A AND EXTENDED QUALITATIVE OBSERVATIONS   
   --------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------
                                                                                           Letter-Word Identification: Identified words rapidly and accurately with little effort (automatic word identification skills)
                                                                                           Applied Problems: Solved problems with no observed difficulties (good comprehension and analytical abilities)

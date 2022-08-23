@@ -1,34 +1,35 @@
 +-------------------------+-------------------+
-| Name: ecr_08_0006       |   --------- --    |
-|                         |   School:         |
+| NAME: ecr_08_0006       |   --------- --    |
+|                         |   SCHOOL:         |
 |                         |   --------- --    |
+                                             
 +=========================+===================+
-| Date of Birth:          |   ---------- --   |
-|                         |   Teacher:        |
+| DATE OF BIRTH:          |   ---------- --   |
+|                         |   TEACHER:        |
 |                         |   ---------- --   |
 +-------------------------+-------------------+
 |   ------ ----------     |   -------- --     |
-|   Age:   46 years       |   Grade:          |
+|   AGE:   46 years       |   GRADE:          |
 |   ------ ----------     |   -------- --     |
 +-------------------------+-------------------+
-| Sex: Male               | ID: ecr_08_0006   |
+| SEX: Male               | ID: ecr_08_0006   |
 +-------------------------+-------------------+
 |   ------------------ -- |   ------------ -- |
-|   Date of Testing:      |   Examiners:      |
+|   DATE OF TESTING:      |   EXAMINERS:      |
 |   ------------------ -- |   ------------ -- |
 +-------------------------+-------------------+
 
 TESTS ADMINISTERED
 
-Woodcock-Johnson IV Tests of Achievement Form A and Extended (Norms
+_Woodcock-Johnson IV Tests of Achievement Form A and Extended_ (Norms
 based on age 46-9)
 
 TABLE OF SCORES
 
-Woodcock-Johnson IV Tests of Achievement Form A and Extended (Norms
+_Woodcock-Johnson IV Tests of Achievement Form A and Extended_ (Norms
 based on age 46-9)
 
-  CLUSTER/Test                 W     AE     RPI     SS (68% Band)
+  CLUSTER/TEST                 W     AE     RPI     SS (68% BAND)
   ---------------------------- ----- ------ ------- ---------------
   READING                      538   >30    91/90   101 (98-104)
   BROAD READING                538   20     87/90   98 (96-101)
@@ -60,7 +61,7 @@ based on age 46-9)
   Spelling of Sounds           523   >22    98/90   117 (110-124)
   Reading Vocabulary           547   >30    99/90   121 (116-126)
 
-  Woodcock-Johnson IV Tests of Achievement Form A and Extended Qualitative Observations   
+  WOODCOCK-JOHNSON IV TESTS OF ACHIEVEMENT FORM A AND EXTENDED QUALITATIVE OBSERVATIONS   
   --------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                           Letter-Word Identification: Identified initial items rapidly and accurately and identified more difficult items through increased application of phoneme-grapheme relationships (typical)
                                                                                           Applied Problems: Solved initial problems with no observed difficulty but demonstrated increasing difficulties solving the latter items (typical)

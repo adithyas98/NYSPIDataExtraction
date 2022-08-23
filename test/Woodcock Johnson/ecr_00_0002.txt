@@ -1,34 +1,35 @@
 +-------------------------+-------------------+
-| Name: ecr_00_0002       |   --------- --    |
-|                         |   School:         |
+| NAME: ecr_00_0002       |   --------- --    |
+|                         |   SCHOOL:         |
 |                         |   --------- --    |
+                                             
 +=========================+===================+
-| Date of Birth:          |   ---------- --   |
-|                         |   Teacher:        |
+| DATE OF BIRTH:          |   ---------- --   |
+|                         |   TEACHER:        |
 |                         |   ---------- --   |
 +-------------------------+-------------------+
 |   ------ ----------     |   -------- --     |
-|   Age:   33 years       |   Grade:          |
+|   AGE:   33 years       |   GRADE:          |
 |   ------ ----------     |   -------- --     |
 +-------------------------+-------------------+
-| Sex: Male               | ID: ecr_00_0002   |
+| SEX: Male               | ID: ecr_00_0002   |
 +-------------------------+-------------------+
 |   ------------------ -- |   ------------ -- |
-|   Date of Testing:      |   Examiners:      |
+|   DATE OF TESTING:      |   EXAMINERS:      |
 |   ------------------ -- |   ------------ -- |
 +-------------------------+-------------------+
 
 TESTS ADMINISTERED
 
-Woodcock-Johnson IV Tests of Achievement Form A and Extended (Norms
+_Woodcock-Johnson IV Tests of Achievement Form A and Extended_ (Norms
 based on age 33-1)
 
 TABLE OF SCORES
 
-Woodcock-Johnson IV Tests of Achievement Form A and Extended (Norms
+_Woodcock-Johnson IV Tests of Achievement Form A and Extended_ (Norms
 based on age 33-1)
 
-  CLUSTER/Test                 W     AE      RPI      SS (68% Band)
+  CLUSTER/TEST                 W     AE      RPI      SS (68% BAND)
   ---------------------------- ----- ------- -------- ---------------
   READING                      538   >30     91/90    101 (98-104)
   BROAD READING                549   >30     95/90    105 (102-108)
@@ -62,7 +63,7 @@ based on age 33-1)
   Spelling of Sounds           523   >22     98/90    115 (108-123)
   Reading Vocabulary           505   11-9    50/90    82 (77-86)
 
-  Woodcock-Johnson IV Tests of Achievement Form A and Extended Test Session Observations   
+  WOODCOCK-JOHNSON IV TESTS OF ACHIEVEMENT FORM A AND EXTENDED TEST SESSION OBSERVATIONS   
   ---------------------------------------------------------------------------------------- ------------------------------------------------------------------------------
                                                                                            Level of conversational proficiency: Very Advanced
                                                                                            Level of cooperation: Exceptionally cooperative throughout the examination
@@ -72,7 +73,7 @@ based on age 33-1)
                                                                                            Care in responding: Prompt but careful in responding (typical for age/grade)
                                                                                            Response to difficult tasks: Attempted but gave up easily
 
-  Woodcock-Johnson IV Tests of Achievement Form A and Extended Qualitative Observations   
+  WOODCOCK-JOHNSON IV TESTS OF ACHIEVEMENT FORM A AND EXTENDED QUALITATIVE OBSERVATIONS   
   --------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------
                                                                                           Letter-Word Identification: Identified words rapidly and accurately with little effort (automatic word identification skills)
                                                                                           Applied Problems: Solved initial problems with no observed difficulty but demonstrated increasing difficulties solving the latter items (typical)
