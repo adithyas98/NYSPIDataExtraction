@@ -52,7 +52,7 @@ def readData(file):
         print(clusters)
 
     #Now we can try to extract the data points
-    data = [file]
+    data = [file.split('.')[0]]
     for d in dataEntries:
         extracts = re.findall("[><\-\(]?\d{1,}.{0,2}\d{1,}\)?",d[0])
         # combine the last two elements
