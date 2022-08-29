@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import os
 import re
 from redcapAPI import RedCapAPI
@@ -52,7 +52,7 @@ def readData(file):
     #calculate the averages
     averages = []
     for dataset in dataLists:
-        averages.append(sum(dataset)/len(dataset))
+        averages.append(sum(dataset[-10:])/len(dataset[-10:]))
 
 
 
@@ -106,7 +106,8 @@ def readData(file):
 
 
 if __name__ == "__main__":
-    baseDir = "/Users/adish/Documents/NYPSI and NKI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/CS"
+    #baseDir = "/Users/adish/Documents/NYPSI and NKI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/CS"
+    baseDir = "/mnt/h/RedCapDataExtractionScripts/NYSPIDataExtraction/test/CS"
     os.chdir(baseDir)#change the directory
     errorFiles = []
     rc = RedCapAPI()
