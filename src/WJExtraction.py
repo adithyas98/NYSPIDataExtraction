@@ -107,7 +107,7 @@ if __name__ == "__main__":
                 dataDicts.append(rc.toDict(labels,data))
     print(len(dataDicts))
     header = dataDicts[0].keys()
-    rc.addCSVHeader(header,"CSCombinedData")
+    rc.addCSVHeader(header,"WJCombinedData")
     for d in dataDicts:
         h = d.keys()
         rc.toCSV(d,"CSCombinedData",h)
