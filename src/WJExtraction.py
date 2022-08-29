@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import os
 import re
 from redcapAPI import RedCapAPI
@@ -6,7 +6,7 @@ import csv
 from mat4py import loadmat
 import itertools
 import pypandoc
-debug = False #Set to false when not debugging
+debug = True #Set to false when not debugging
 
 
 
@@ -26,25 +26,22 @@ def readData(file):
         lines = f.readlines()
     dataLine = 0#hold the position of where the data starts
     for i,line in enumerate(lines):
-        if 'CLUSTER/Test' in line:
+        if 'CLUSTER/Test'.lower() in line.lower():
             #We want to mark the position
             dataLine = i
     #Now we can start reading the data in from this point on
     dataEntries = []
     for line in lines[dataLine+2:]:
-        if 'Woodcock-Johnson IV Tests' in line:
+        if 'Woodcock-Johnson IV Tests'.lower() in line.lower():
             #We are done reading the data and we can stop
             break
         if len(line.strip()) != 0:
             dataEntries.append(line.split('\n'))
-            #TODO: Need to find a way to only get number entries, maybe with regex and space characters, with split
             #The best way to do it would be to find the data points based on split and regex
             if debug:
                 print(dataEntries[0])
     #Now we need to gather the clusters (The tests run) and the data points
     clusters = []
-    print("Entering Loop")
-    print(len(dataEntries))
     for d in dataEntries:
         cluster = re.findall(r'[a-zA-Z]{2,}',d[0])
         clusters.append('_'.join(cluster))
@@ -53,7 +50,7 @@ def readData(file):
         print(clusters)
 
     #Now we can try to extract the data points
-    data = [file]
+    data = [file.split('.')[0]]
     for d in dataEntries:
         extracts = re.findall("[><\-\(]?\d{1,}.{0,2}\d{1,}\)?",d[0])
         # combine the last two elements
@@ -88,7 +85,8 @@ def readData(file):
 
 
 if __name__ == "__main__":
-    baseDir = "/Users/adish/Documents/NYPSI and NKI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/Woodcock Johnson"
+    #baseDir = "/Users/adish/Documents/NYPSI and NKI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/Woodcock Johnson"
+    baseDir = "/mnt/h/RedCapDataExtractionScripts/NYSPIDataExtraction/test/Woodcock Johnson"
     os.chdir(baseDir)#change the directory
     errorFiles = []
     rc = RedCapAPI()
