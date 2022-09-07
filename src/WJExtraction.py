@@ -52,22 +52,25 @@ def readData(file):
     #Now we can try to extract the data points
     data = [file.split('.')[0]]
     for d in dataEntries:
-        extracts = re.findall("[><\-\(]?\d{1,}.{0,2}\d{1,}\)?",d[0])
+        #extracts = re.findall("[><\-\(]?\d{1,}.{0,2}\d{1,}\)?",d[0])
+        extracts = re.findall("[><\-\(]?\d{0,}[-]?\d{1,}\)?",d[0])
+        print(extracts)
         # combine the last two elements
-        data.extend(extracts[0:-2])
-        data.append(''.join(extracts[-2:]))
+        data.extend(extracts)
     if debug:
         print(data)
     
     #Now create the labels
-    scoreNames = ['W','AE','RPI','SS_68%_Band']
+    scoreNames = ['W','AE','RPI_num','RPI_denom','SS','SS_68%_Band']
     labels = ['record_id']
+    print("clusters:",len(clusters))
     for c in clusters:
         for s in scoreNames:
             labels.append("WJ_{}_{}".format(c,s))
             
     if debug:
         print(labels)
+        print(data)
     return labels,data
 
 
@@ -100,6 +103,7 @@ if __name__ == "__main__":
             labels,data = readData(f)
             if len(labels) != len(data):
                 #Then we want to append the error files to a list
+                print('labels:{},data:{}'.format(len(labels),len(data)))
                 errorFiles.append(f)
             else:
                 #if there aren't any issues continue normally
@@ -110,7 +114,7 @@ if __name__ == "__main__":
     rc.addCSVHeader(header,"WJCombinedData")
     for d in dataDicts:
         h = d.keys()
-        rc.toCSV(d,"CSCombinedData",h)
+        rc.toCSV(d,"WJCombinedData",h)
     print("Problem Files:\n")
     print(errorFiles)
  
