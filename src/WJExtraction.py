@@ -54,14 +54,41 @@ def readData(file):
     for d in dataEntries:
         #extracts = re.findall("[><\-\(]?\d{1,}.{0,2}\d{1,}\)?",d[0])
         extracts = re.findall("[><\-\(]?\d{0,}[-]?\d{1,}\)?",d[0])
-        print(extracts)
-        # combine the last two elements
+        print("Before:",extracts)
+        for i,e in enumerate(extracts):
+            #We want to iterate through and modify particular ones
+            if i==1 and ("-" in e):
+                #Then we need to conver to a decimal 
+                date = re.findall("\d{1,}",e)
+                extracts[1] = float(date[0]) + float(date[1])/12
+                print("Dash",extracts)
+            elif i == 5:
+                #The confidence interval will be in the following format
+                #   (XX - YY)
+                #We want to separate it such that we only get the numbers
+                confInt = re.findall("\d{1,}",e)
+                #Now we want to place this in the correct place
+                extracts[5] = confInt[0]
+                if len(confInt) > 1:
+                    extracts.append(confInt[1])
+                else:
+                    #This means that the range is the same number so we will 
+                    #   add the value we found
+                    extracts.append(confInt[0])
+                print("Conf Int",extracts)
+            if not e.isnumeric():
+                #We want to only extract the numbers
+                digits = re.findall("\d{1,}",e)
+                extracts[i] = digits[0]
+                print("non-digit", extracts)
+        if debug:
+            print(extracts,len(extracts) == 7)
         data.extend(extracts)
     if debug:
         print(data)
     
     #Now create the labels
-    scoreNames = ['W','AE','RPI_num','RPI_denom','SS','SS_68%_Band']
+    scoreNames = ['W','AE','RPI_num','RPI_denom','SS','SS_68%_LowBound','SS_68%_UpBound']
     labels = ['record_id']
     print("clusters:",len(clusters))
     for c in clusters:
