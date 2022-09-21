@@ -61,6 +61,7 @@ def readData(file):
                 #Then we need to conver to a decimal 
                 date = re.findall("\d{1,}",e)
                 extracts[1] = float(date[0]) + float(date[1])/12
+                e = extracts[1]
                 print("Dash",extracts)
             elif i == 5:
                 #The confidence interval will be in the following format
@@ -76,8 +77,9 @@ def readData(file):
                     #   add the value we found
                     extracts.append(confInt[0])
                 print("Conf Int",extracts)
-            if not e.isnumeric():
+            if (not str(e).isnumeric()) and (not isinstance(e,float)):
                 #We want to only extract the numbers
+                
                 digits = re.findall("\d{1,}",e)
                 extracts[i] = digits[0]
                 print("non-digit", extracts)
@@ -88,12 +90,12 @@ def readData(file):
         print(data)
     
     #Now create the labels
-    scoreNames = ['W','AE','RPI_num','RPI_denom','SS','SS_68%_LowBound','SS_68%_UpBound']
+    scoreNames = ['W','AE','RPI_num','RPI_denom','SS','SS_LowBound','SS_HighBound']
     labels = ['record_id']
     print("clusters:",len(clusters))
     for c in clusters:
         for s in scoreNames:
-            labels.append("WJ_{}_{}".format(c,s))
+            labels.append("wj_{}_{}".format(c.lower(),s.lower()))
             
     if debug:
         print(labels)

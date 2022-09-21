@@ -1,0 +1,76 @@
++-----------------------------------+-------------------+
+| NAME: ecr_04_0005, Boruch         |   --------- --    |
+|                                   |   SCHOOL:         |
+|                                   |   --------- --    |
+                                                       
++===================================+===================+
+| DATE OF BIRTH: 02/04/1998         |   ---------- --   |
+|                                   |   TEACHER:        |
+|                                   |   ---------- --   |
++-----------------------------------+-------------------+
+|   ------ --------------------     |   -------- --     |
+|   AGE:   23 years, 4 months       |   GRADE:          |
+|   ------ --------------------     |   -------- --     |
++-----------------------------------+-------------------+
+| SEX: Male                         | ID: ecr_04_0005   |
++-----------------------------------+-------------------+
+|   ------------------ ------------ |   ------------ -- |
+|   DATE OF TESTING:   05/26/2021   |   EXAMINERS:      |
+|   ------------------ ------------ |   ------------ -- |
++-----------------------------------+-------------------+
+
+TESTS ADMINISTERED
+
+_Woodcock-Johnson IV Tests of Achievement Form A and Extended_ (Norms
+based on age 23-4)
+
+TABLE OF SCORES
+
+_Woodcock-Johnson IV Tests of Achievement Form A and Extended_ (Norms
+based on age 23-4)
+
+  CLUSTER/TEST                 W     AE      RPI      SS (68% BAND)
+  ---------------------------- ----- ------- -------- ---------------
+  READING                      538   >30     94/90    104 (101-108)
+  BROAD READING                547   >30     95/90    105 (102-109)
+  BASIC READING SKILLS         530   >30     93/90    104 (100-108)
+  READING COMPREHENSION        517   19      89/90    99 (96-102)
+  READING COMP (Ext)           523   >30     93/90    104 (101-108)
+  READING FLUENCY              547   >30     95/90    105 (101-109)
+  READING RATE                 562   >30     98/90    109 (105-112)
+  MATHEMATICS                  556   >23     99/90    120 (117-124)
+  BROAD MATHEMATICS            550   >30     98/90    114 (111-116)
+  MATH CALCULATION SKILLS      545   >30     96/90    106 (103-109)
+  MATH PROBLEM SOLVING         549   >27     99/90    122 (118-127)
+  BASIC WRITING SKILLS         516   13-1    62/90    87 (84-90)
+  ACADEMIC SKILLS              538   >30     93/90    103 (100-105)
+  PHONEME-GRAPHEME KNOW        511   19      88/90    98 (94-103)
+  BRIEF ACHIEVEMENT            541   >30     96/90    108 (105-110)
+                                                      
+  Letter-Word Identification   544   >30     96/90    106 (102-110)
+  Applied Problems             560   >30     100/90   127 (122-132)
+  Spelling                     519   12-10   59/90    87 (83-91)
+  Passage Comprehension        531   >30     92/90    101 (97-106)
+  Calculation                  551   >21     99/90    113 (109-117)
+  Word Attack                  516   24      90/90    100 (94-107)
+  Oral Reading                 529   >30     93/90    103 (97-108)
+  Sentence Reading Fluency     564   >30     97/90    106 (101-110)
+  Math Facts Fluency           539   16-5    87/90    98 (94-102)
+  Reading Recall               502   12-6    85/90    95 (91-98)
+  Number Matrices              537   >24     98/90    114 (108-120)
+  Editing                      513   13-5    65/90    88 (84-93)
+  Word Reading Fluency         561   >30     99/90    110 (105-116)
+  Spelling of Sounds           507   16-3    86/90    96 (91-102)
+  Reading Vocabulary           536   >30     97/90    114 (108-119)
+
+  WOODCOCK-JOHNSON IV TESTS OF ACHIEVEMENT FORM A AND EXTENDED QUALITATIVE OBSERVATIONS   
+  --------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                          Letter-Word Identification: Identified initial items rapidly and accurately and identified more difficult items through increased application of phoneme-grapheme relationships (typical)
+                                                                                          Applied Problems: Solved initial problems with no observed difficulty but demonstrated increasing difficulties solving the latter items (typical)
+                                                                                          Spelling: Spelled initial items easily and accurately; spelling of latter items reflected a need for further skill development (typical)
+                                                                                          Passage Comprehension: Appeared to read initial passages easily but appeared to struggle as the reading increased in difficulty (typical)
+                                                                                          Calculation: Solved initial problems quickly with no observed difficulties but demonstrated less automaticity with the latter items (typical)
+                                                                                          Word Attack: Identified initial items rapidly and accurately and identified more difficult items through increased application of phoneme-grapheme relationships (typical)
+                                                                                          Oral Reading: Errors involving and mispronunciation (4) were observed
+
+EOF
