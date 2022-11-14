@@ -74,11 +74,11 @@ def readData(file):
     labels = ['record_id']#init the labels list
     for k in keys:
         for i in range(maxLen):
-            labels.append("CS_{}_{}".format(k,i))
+            labels.append("cs_{}_{}".format(k,i))
 
     #create keys for averages
     for k in keys:
-        labels.append("CS_{}_avg".format(k))
+        labels.append("cs_{}_avg".format(k).lower())
 
 
 

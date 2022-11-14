@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import os
 import re
 from redcapAPI import RedCapAPI
@@ -78,7 +78,8 @@ if __name__ == "__main__":
     dataFields.append('tbac_auditory_g')#We just need to include this at the end
 
     ### FILL THIS OUT ###
-    directory = r"/Users/adish/Documents/NYPSI and NKI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/TempTBACData"
+    #directory = r"/Users/adish/Documents/NYPSI and NKI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/TempTBACData"
+    directory = "/mnt/h/RedCapDataExtractionScripts/NYSPIDataExtraction/test/TempTBACData"
     os.chdir(directory)
     allData = dict()
     debug = True
@@ -105,7 +106,7 @@ if __name__ == "__main__":
                 continue
             #Now we want to save it to a csv
             #Now we can add the data points
-            redcapAPI.toCSV(fullData,"CombinedData",dataFields)
+            redcapAPI.toCSV(fullData,"TBACCombinedData",dataFields)
             #status = redcapAPI.sendtoRedCap(dataFields, data)
 
             #print(status)
