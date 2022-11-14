@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import os
 import re
 from redcapAPI import RedCapAPI
@@ -52,24 +52,56 @@ def readData(file):
         print(clusters)
 
     #Now we can try to extract the data points
-    data = [file]
+    data = [file.split('.')[0]]
     for d in dataEntries:
-        extracts = re.findall("[><\-\(]?\d{1,}.{0,2}\d{1,}\)?",d[0])
-        # combine the last two elements
-        data.extend(extracts[0:-2])
-        data.append(''.join(extracts[-2:]))
+        #extracts = re.findall("[><\-\(]?\d{1,}.{0,2}\d{1,}\)?",d[0])
+        extracts = re.findall("[><\-\(]?\d{0,}[-]?\d{1,}\)?",d[0])
+        print("Before:",extracts)
+        for i,e in enumerate(extracts):
+            #We want to iterate through and modify particular ones
+            if i==1 and ("-" in e):
+                #Then we need to conver to a decimal 
+                date = re.findall("\d{1,}",e)
+                extracts[1] = float(date[0]) + float(date[1])/12
+                e = extracts[1]
+                print("Dash",extracts)
+            elif i == 5:
+                #The confidence interval will be in the following format
+                #   (XX - YY)
+                #We want to separate it such that we only get the numbers
+                confInt = re.findall("\d{1,}",e)
+                #Now we want to place this in the correct place
+                extracts[5] = confInt[0]
+                if len(confInt) > 1:
+                    extracts.append(confInt[1])
+                else:
+                    #This means that the range is the same number so we will 
+                    #   add the value we found
+                    extracts.append(confInt[0])
+                print("Conf Int",extracts)
+            if (not str(e).isnumeric()) and (not isinstance(e,float)):
+                #We want to only extract the numbers
+                
+                digits = re.findall("\d{1,}",e)
+                extracts[i] = digits[0]
+                print("non-digit", extracts)
+        if debug:
+            print(extracts,len(extracts) == 7)
+        data.extend(extracts)
     if debug:
         print(data)
     
     #Now create the labels
-    scoreNames = ['W','AE','RPI','SS_68%_Band']
+    scoreNames = ['W','AE','RPI_num','RPI_denom','SS','SS_LowBound','SS_HighBound']
     labels = ['record_id']
+    print("clusters:",len(clusters))
     for c in clusters:
         for s in scoreNames:
-            labels.append("WJ_{}_{}".format(c,s))
+            labels.append("wj_{}_{}".format(c.lower(),s.lower()))
             
     if debug:
         print(labels)
+        print(data)
     return labels,data
 
 
@@ -87,7 +119,8 @@ def readData(file):
 
 
 if __name__ == "__main__":
-    baseDir = "/Users/adish/Documents/NYPSI and NKI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/Woodcock Johnson"
+    baseDir = "/Users/adish/Documents/NYPSI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/Woodcock Johnson"
+    #baseDir = "/mnt/h/RedCapDataExtractionScripts/NYSPIDataExtraction/test/Woodcock Johnson"
     os.chdir(baseDir)#change the directory
     errorFiles = []
     rc = RedCapAPI()
@@ -104,6 +137,7 @@ if __name__ == "__main__":
             labels,data = readData(f)
             if len(labels) != len(data):
                 #Then we want to append the error files to a list
+                print('labels:{},data:{}'.format(len(labels),len(data)))
                 errorFiles.append(f)
             else:
                 #if there aren't any issues continue normally
@@ -111,10 +145,10 @@ if __name__ == "__main__":
                 dataDicts.append(rc.toDict(labels,data))
     print(len(dataDicts))
     header = dataDicts[0].keys()
-    rc.addCSVHeader(header,"CSCombinedData")
+    rc.addCSVHeader(header,"WJCombinedData")
     for d in dataDicts:
         h = d.keys()
-        rc.toCSV(d,"CSCombinedData",h)
+        rc.toCSV(d,"WJCombinedData",h)
     print("Problem Files:\n")
     print(errorFiles)
  

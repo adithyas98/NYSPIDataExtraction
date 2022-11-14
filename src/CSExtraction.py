@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import os
 import re
 from redcapAPI import RedCapAPI
@@ -74,11 +74,11 @@ def readData(file):
     labels = ['record_id']#init the labels list
     for k in keys:
         for i in range(maxLen):
-            labels.append("CS_{}_{}".format(k,i))
+            labels.append("cs_{}_{}".format(k,i))
 
     #create keys for averages
     for k in keys:
-        labels.append("CS_{}_avg".format(k))
+        labels.append("cs_{}_avg".format(k).lower())
 
 
 
@@ -106,7 +106,8 @@ def readData(file):
 
 
 if __name__ == "__main__":
-    baseDir = "/Users/adish/Documents/NYPSI and NKI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/CS"
+    #baseDir = "/Users/adish/Documents/NYPSI and NKI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/CS"
+    baseDir = "/mnt/h/RedCapDataExtractionScripts/NYSPIDataExtraction/test/CS"
     os.chdir(baseDir)#change the directory
     errorFiles = []
     rc = RedCapAPI()

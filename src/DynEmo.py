@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import os
 import re
 from redcapAPI import RedCapAPI
@@ -55,7 +55,7 @@ def readData(filename):
             #iterate through the trials
             for h in header:
                 #we want to iterate through the header to make our labels
-                labels.append('{}_{}_{}'.format(base,t,h))
+                labels.append('{}_{}_{}'.format(base,t,h.lower()))
         labels.append('{}_avg_accuracy'.format(base))
         labels.append('{}_avg_response_time'.format(base))
         #Run some checks to see if everything is working correctly
@@ -71,7 +71,8 @@ def readData(filename):
 
 
 if __name__ == "__main__":
-    baseDir = "/Users/adish/Documents/NYPSI and NKI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/DynEmoData/DynEmo/"
+    #baseDir = "/Users/adish/Documents/NYPSI and NKI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/DynEmoData/DynEmo/"
+    baseDir = "/mnt/h/RedCapDataExtractionScripts/NYSPIDataExtraction/test/DynEmoData"
     os.chdir(baseDir)#change the directory
     errorFiles = []
     rc = RedCapAPI()
