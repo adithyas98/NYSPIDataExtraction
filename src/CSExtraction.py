@@ -52,7 +52,7 @@ def readData(file):
     #calculate the averages
     averages = []
     for dataset in dataLists:
-        averages.append(sum(dataset)/len(dataset))
+        averages.append(sum(dataset[-10:])/len(dataset[-10:]))
 
 
 
