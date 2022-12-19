@@ -1,0 +1,67 @@
++-----------------------------------+-------------------+
+| Name: , 5945                      |   --------- --    |
+|                                   |   School:         |
+|                                   |   --------- --    |
++===================================+===================+
+| Date of Birth: 01/01/1996         |   ---------- --   |
+|                                   |   Teacher:        |
+|                                   |   ---------- --   |
++-----------------------------------+-------------------+
+|   ------ --------------------     |   -------- --     |
+|   Age:   24 years, 9 months       |   Grade:          |
+|   ------ --------------------     |   -------- --     |
++-----------------------------------+-------------------+
+| Sex: Male                         | ID:               |
++-----------------------------------+-------------------+
+|   ------------------ ------------ |   ------------ -- |
+|   Date of Testing:   09/23/2020   |   Examiners:      |
+|   ------------------ ------------ |   ------------ -- |
++-----------------------------------+-------------------+
+
+TESTS ADMINISTERED
+
+Woodcock-Johnson IV Tests of Achievement Form A and Extended (Norms
+based on age 24-9)
+
+TABLE OF SCORES
+
+Woodcock-Johnson IV Tests of Achievement Form A and Extended (Norms
+based on age 24-9)
+
+  CLUSTER/Test                 W     AE      RPI     SS (68% Band)
+  ---------------------------- ----- ------- ------- ---------------
+  READING                      531   20      88/90   98 (95-101)
+  BROAD READING                518   12-10   45/90   85 (82-89)
+  BASIC READING SKILLS         545   >30     99/90   117 (110-124)
+  READING COMPREHENSION        500   10-10   56/90   82 (79-85)
+  READING COMP (Ext)           507   12-10   70/90   87 (84-90)
+  READING FLUENCY              513   11-10   32/90   83 (78-87)
+  READING RATE                 483   9-6     1/90    67 (61-73)
+  MATHEMATICS                  507   11-4    45/90   82 (79-85)
+  BROAD MATHEMATICS            515   12-2    55/90   85 (83-88)
+  MATH CALCULATION SKILLS      518   12-4    54/90   86 (83-89)
+  MATH PROBLEM SOLVING         518   15-2    84/90   96 (92-99)
+  ACADEMIC SKILLS              537   >30     92/90   102 (99-105)
+  PHONEME-GRAPHEME KNOW        530   >29     98/90   121 (111-130)
+  BRIEF ACHIEVEMENT            538   >30     94/90   104 (102-107)
+                                                     
+  Letter-Word Identification   548   >30     97/90   108 (103-112)
+  Applied Problems             508   11-8    57/90   86 (81-90)
+  Spelling                     558   >30     99/90   118 (113-122)
+  Passage Comprehension        515   14-0    63/90   89 (85-93)
+  Calculation                  506   11-2    33/90   81 (77-85)
+  Word Attack                  542   >30     99/90   127 (112-143)
+  Oral Reading                 534   >30     95/90   106 (100-112)
+  Sentence Reading Fluency     492   9-9     1/90    71 (65-76)
+  Math Facts Fluency           531   13-10   73/90   93 (89-97)
+  Reading Recall               486   7-11    48/90   71 (68-74)
+  Number Matrices              528   >24     95/90   107 (101-112)
+  Word Reading Fluency         474   9-4     1/90    68 (59-76)
+  Spelling of Sounds           519   >22     96/90   110 (103-117)
+  Reading Vocabulary           522   21      89/90   99 (94-104)
+
+  Woodcock-Johnson IV Tests of Achievement Form A and Extended Qualitative Observations   
+  --------------------------------------------------------------------------------------- -----------------------------------------------------------------------
+                                                                                          Oral Reading: Errors involving and mispronunciation (3) were observed
+
+EOF

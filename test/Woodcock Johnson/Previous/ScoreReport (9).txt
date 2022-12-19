@@ -1,0 +1,74 @@
++-----------------------------------+-------------------+
+| Name: , 5946                      |   --------- --    |
+|                                   |   School:         |
+|                                   |   --------- --    |
++===================================+===================+
+| Date of Birth: 01/01/1986         |   ---------- --   |
+|                                   |   Teacher:        |
+|                                   |   ---------- --   |
++-----------------------------------+-------------------+
+|   ------ --------------------     |   -------- --     |
+|   Age:   35 years, 8 months       |   Grade:          |
+|   ------ --------------------     |   -------- --     |
++-----------------------------------+-------------------+
+| Sex: Male                         | ID:               |
++-----------------------------------+-------------------+
+|   ------------------ ------------ |   ------------ -- |
+|   Date of Testing:   09/16/2021   |   Examiners:      |
+|   ------------------ ------------ |   ------------ -- |
++-----------------------------------+-------------------+
+
+TESTS ADMINISTERED
+
+Woodcock-Johnson IV Tests of Achievement Form A and Extended (Norms
+based on age 35-8)
+
+TABLE OF SCORES
+
+Woodcock-Johnson IV Tests of Achievement Form A and Extended (Norms
+based on age 35-8)
+
+  CLUSTER/Test                 W     AE     RPI     SS (68% Band)
+  ---------------------------- ----- ------ ------- ---------------
+  READING                      505   11-2   22/90   79 (76-81)
+  BROAD READING                455   7-5    0/90    44 (40-49)
+  READING COMPREHENSION        488   8-6    24/90   70 (68-73)
+  READING COMP (Ext)           491   8-11   24/90   70 (68-73)
+  READING FLUENCY              429   6-7    0/90    <40 (<40-<40)
+  READING RATE                 371   5-2    0/90    <40 (<40-<40)
+  MATHEMATICS                  426   5-11   0/90    <40 (<40-<40)
+  BROAD MATHEMATICS            412   5-6    0/90    <40 (<40-<40)
+  MATH CALCULATION SKILLS      382   <2-0   0/90    <40 (<40-<40)
+  MATH PROBLEM SOLVING         464   7-1    1/90    48 (44-52)
+  ACADEMIC SKILLS              468   7-11   0/90    47 (43-50)
+  BRIEF ACHIEVEMENT            500   10-3   16/90   73 (71-75)
+                                                    
+  Letter-Word Identification   523   14-3   53/90   87 (84-91)
+  Applied Problems             474   8-0    3/90    59 (54-63)
+  Spelling                     503   10-6   17/90   77 (73-80)
+  Passage Comprehension        487   8-7    7/90    70 (66-73)
+  Calculation                  378   2-9    0/90    <40 (<40-<40)
+  Oral Reading                 504   11-2   38/90   82 (79-85)
+  Sentence Reading Fluency     354   <4-1   0/90    <40 (<40-<40)
+  Math Facts Fluency           385   <2-2   0/90    <40 (<40-<40)
+  Reading Recall               489   8-4    57/90   76 (73-79)
+  Number Matrices              454   5-8    1/90    51 (45-57)
+  Word Reading Fluency         388   6-2    0/90    <40 (<40-<40)
+  Spelling of Sounds           488   8-3    47/90   79 (74-83)
+  Reading Vocabulary           496   9-10   26/90   74 (70-78)
+
+  Woodcock-Johnson IV Tests of Achievement Form A and Extended Test Session Observations   
+  ---------------------------------------------------------------------------------------- -----------------------------------------------------------
+                                                                                           Level of conversational proficiency: Limited
+                                                                                           Level of cooperation: Uncooperative at times
+                                                                                           Level of activity: Seemed lethargic
+                                                                                           Attention and concentration: Distracted often
+                                                                                           Self-confidence: Appeared tense or worried at times
+                                                                                           Care in responding: Very slow and hesitant in responding
+                                                                                           Response to difficult tasks: Attempted but gave up easily
+
+  Woodcock-Johnson IV Tests of Achievement Form A and Extended Qualitative Observations   
+  --------------------------------------------------------------------------------------- ------------------------------------------------------------------------
+                                                                                          Oral Reading: Errors involving and mispronunciation (13) were observed
+
+EOF

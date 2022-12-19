@@ -144,7 +144,11 @@ if __name__ == "__main__":
                 #we want to make them into dictionaries
                 dataDicts.append(rc.toDict(labels,data))
     print(len(dataDicts))
-    header = dataDicts[0].keys()
+    header = list(dataDicts[0].keys())
+    #We want to make sure the header contains all of the data labels we want
+    for d in dataDicts[1:]:
+        h = list(d.keys())
+        header = list(set(header + h))
     rc.addCSVHeader(header,"WJCombinedData")
     for d in dataDicts:
         h = d.keys()

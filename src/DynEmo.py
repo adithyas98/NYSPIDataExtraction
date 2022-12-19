@@ -71,8 +71,10 @@ def readData(filename):
 
 
 if __name__ == "__main__":
-    #baseDir = "/Users/adish/Documents/NYPSI and NKI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/DynEmoData/DynEmo/"
-    baseDir = "/mnt/h/RedCapDataExtractionScripts/NYSPIDataExtraction/test/DynEmoData"
+    #baseDir = "/Users/adish/Documents/NYPSI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/DynEmoData/DynEmo/"
+    #baseDir = "/mnt/h/RedCapDataExtractionScripts/NYSPIDataExtraction/test/DynEmoData"
+    baseDir = "/Users/adish/Documents/NYPSI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/DynEmoData/"
+
     os.chdir(baseDir)#change the directory
     errorFiles = []
     rc = RedCapAPI()
