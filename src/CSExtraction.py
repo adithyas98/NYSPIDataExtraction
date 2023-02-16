@@ -106,8 +106,8 @@ def readData(file):
 
 
 if __name__ == "__main__":
-    #baseDir = "/Users/adish/Documents/NYPSI and NKI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/CS"
-    baseDir = "/mnt/h/RedCapDataExtractionScripts/NYSPIDataExtraction/test/CS"
+    baseDir = "/Users/adish/Documents/NYPSI Research/RedCapEncryptionProject/NYSPI-ExpTher-2021/test/CS"
+    #baseDir = "/mnt/h/RedCapDataExtractionScripts/NYSPIDataExtraction/test/CS"
     os.chdir(baseDir)#change the directory
     errorFiles = []
     rc = RedCapAPI()

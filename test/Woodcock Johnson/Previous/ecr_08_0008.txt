@@ -1,0 +1,61 @@
++-----------------------------------+-------------------+
+| Name: ecr_08_0008, Antoine        |   --------- --    |
+|                                   |   School:         |
+|                                   |   --------- --    |
++===================================+===================+
+| Date of Birth: 08/08/1986         |   ---------- --   |
+|                                   |   Teacher:        |
+|                                   |   ---------- --   |
++-----------------------------------+-------------------+
+|   ------ --------------------     |   -------- --     |
+|   Age:   34 years, 9 months       |   Grade:          |
+|   ------ --------------------     |   -------- --     |
++-----------------------------------+-------------------+
+| Sex: Male                         | ID: ecr_08_0008   |
++-----------------------------------+-------------------+
+|   ------------------ ------------ |   ------------ -- |
+|   Date of Testing:   04/26/2021   |   Examiners:      |
+|   ------------------ ------------ |   ------------ -- |
++-----------------------------------+-------------------+
+
+TESTS ADMINISTERED
+
+Woodcock-Johnson IV Tests of Achievement Form A and Extended (Norms
+based on age 34-9)
+
+TABLE OF SCORES
+
+Woodcock-Johnson IV Tests of Achievement Form A and Extended (Norms
+based on age 34-9)
+
+  CLUSTER/Test                 W     AE      RPI     SS (68% Band)
+  ---------------------------- ----- ------- ------- ---------------
+  READING                      525   16-1    71/90   92 (89-95)
+  BROAD READING                509   11-4    20/90   79 (76-82)
+  BASIC READING SKILLS         523   19      82/90   95 (92-98)
+  READING COMPREHENSION        507   12-11   71/90   89 (86-92)
+  READING FLUENCY              484   9-0     2/90    65 (61-69)
+  READING RATE                 459   8-5     0/90    57 (53-62)
+  BRIEF ACHIEVEMENT            524   15-1    72/90   91 (89-93)
+                                                     
+  Letter-Word Identification   535   21      80/90   95 (92-99)
+  Applied Problems             514   13-7    72/90   91 (87-95)
+  Spelling                     521   13-5    61/90   89 (86-92)
+  Passage Comprehension        515   14-0    60/90   89 (85-92)
+  Word Attack                  512   17-10   84/90   96 (91-101)
+  Oral Reading                 490   8-11    11/90   72 (69-75)
+  Sentence Reading Fluency     478   9-0     0/90    66 (60-71)
+  Reading Recall               499   10-11   81/90   90 (87-94)
+  Word Reading Fluency         440   7-10    0/90    52 (46-58)
+
+  Woodcock-Johnson IV Tests of Achievement Form A and Extended Qualitative Observations   
+  --------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                          Letter-Word Identification: Identified initial items rapidly and accurately and identified more difficult items through increased application of phoneme-grapheme relationships (typical)
+                                                                                          Applied Problems: Appeared to have limited understanding of grade- or age-appropriate math application tasks
+                                                                                          Spelling: Spelled words in a laborious manner (nonautomatic)
+                                                                                          Passage Comprehension: Appeared to read passages very slowly and had difficulty identifying a correct word (struggled with application of syntactic and semantic cues)
+                                                                                          Word Attack: Identified the initial items rapidly and accurately but had difficulty applying phoneme-grapheme relationships to latter items
+                                                                                          Oral Reading: Errors involving mispronunciation (9), omission (2), insertion (2) and hesitation (8) were observed
+                                                                                          Sentence Reading Fluency: Appeared to read sentences slowly
+
+EOF

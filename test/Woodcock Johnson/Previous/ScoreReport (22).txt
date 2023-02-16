@@ -1,0 +1,85 @@
++-----------------------------------+-------------------+
+| Name: , Randy                     |   --------- --    |
+|                                   |   School:         |
+|                                   |   --------- --    |
++===================================+===================+
+| Date of Birth: 01/01/1997         |   ---------- --   |
+|                                   |   Teacher:        |
+|                                   |   ---------- --   |
++-----------------------------------+-------------------+
+|   ------ -------------------      |   -------- --     |
+|   Age:   26 years, 1 month        |   Grade:          |
+|   ------ -------------------      |   -------- --     |
++-----------------------------------+-------------------+
+| Sex: Male                         | ID:               |
++-----------------------------------+-------------------+
+|   ------------------ ------------ |   ------------ -- |
+|   Date of Testing:   01/18/2023   |   Examiners:      |
+|   ------------------ ------------ |   ------------ -- |
++-----------------------------------+-------------------+
+
+TESTS ADMINISTERED
+
+Woodcock-Johnson IV Tests of Achievement Form A and Extended (Norms
+based on age 26-1)
+
+TABLE OF SCORES
+
+Woodcock-Johnson IV Tests of Achievement Form A and Extended (Norms
+based on age 26-1)
+
+  CLUSTER/Test                 W     AE      RPI     SS (68% Band)
+  ---------------------------- ----- ------- ------- ---------------
+  READING                      523   15-6    73/90   92 (89-95)
+  BROAD READING                536   19      85/90   97 (95-100)
+  BASIC READING SKILLS         519   15-5    78/90   93 (89-96)
+  READING COMPREHENSION        516   18-6    87/90   98 (94-101)
+  READING COMP (Ext)           515   16-6    83/90   94 (92-97)
+  READING FLUENCY              544   >30     93/90   103 (99-106)
+  READING RATE                 549   >30     92/90   101 (97-105)
+  MATHEMATICS                  519   13-8    75/90   92 (89-95)
+  BROAD MATHEMATICS            524   14-1    77/90   93 (90-95)
+  MATH CALCULATION SKILLS      531   14-7    82/90   95 (92-98)
+  MATH PROBLEM SOLVING         526   >27     93/90   103 (99-107)
+  ACADEMIC SKILLS              529   16-0    82/90   95 (93-98)
+  PHONEME-GRAPHEME KNOW        491   8-11    45/90   76 (72-80)
+  BRIEF ACHIEVEMENT            524   15-4    77/90   93 (90-95)
+                                                     
+  Letter-Word Identification   535   21      86/90   98 (94-101)
+  Applied Problems             511   12-6    65/90   88 (84-93)
+  Spelling                     527   15-3    76/90   93 (89-97)
+  Passage Comprehension        512   13-1    54/90   87 (83-90)
+  Calculation                  526   14-6    83/90   96 (92-100)
+  Word Attack                  502   11-10   66/90   87 (82-92)
+  Oral Reading                 525   21      88/90   98 (94-103)
+  Sentence Reading Fluency     562   >30     96/90   104 (100-109)
+  Math Facts Fluency           535   14-9    80/90   95 (91-99)
+  Reading Recall               520   >25     98/90   120 (115-125)
+  Number Matrices              542   >24     99/90   119 (113-125)
+  Word Reading Fluency         535   16-10   83/90   97 (92-103)
+  Spelling of Sounds           480   7-5     25/90   67 (62-73)
+  Reading Vocabulary           513   14-4    73/90   89 (85-94)
+
+  Woodcock-Johnson IV Tests of Achievement Form A and Extended Test Session Observations   
+  ---------------------------------------------------------------------------------------- ------------------------------------------------------------------------------
+                                                                                           Level of conversational proficiency: Typical for age/grade
+                                                                                           Level of cooperation: Cooperative (typical for age/grade)
+                                                                                           Level of activity: Typical for age/grade
+                                                                                           Attention and concentration: Attentive to the tasks (typical for age/grade)
+                                                                                           Self-confidence: Appeared at ease and comfortable (typical for age/grade)
+                                                                                           Care in responding: Prompt but careful in responding (typical for age/grade)
+                                                                                           Response to difficult tasks: Attempted but gave up easily
+
+  Woodcock-Johnson IV Tests of Achievement Form A and Extended Qualitative Observations   
+  --------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                          Letter-Word Identification: Identified initial items rapidly and accurately and identified more difficult items through increased application of phoneme-grapheme relationships (typical)
+                                                                                          Applied Problems: Appeared to have limited understanding of grade- or age-appropriate math application tasks
+                                                                                          Spelling: Spelled initial items easily and accurately; spelling of latter items reflected a need for further skill development (typical)
+                                                                                          Passage Comprehension: Appeared to read passages very slowly and had difficulty identifying a correct word (struggled with application of syntactic and semantic cues)
+                                                                                          Calculation: Solved problems slowly and demonstrated less automaticity with the latter items
+                                                                                          Word Attack: Identified the initial items rapidly and accurately but had difficulty applying phoneme-grapheme relationships to latter items
+                                                                                          Oral Reading: Errors involving mispronunciation (5) and hesitation (2) were observed
+                                                                                          Sentence Reading Fluency: Appeared to read sentences at a rate typical for peers
+                                                                                          Math Facts Fluency: Solved problems at a rate typical for peers
+
+EOF
